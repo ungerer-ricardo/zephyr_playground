@@ -12,7 +12,8 @@
 				"lfs.vscode-emacs-friendly",
 				"ryanluker.vscode-coverage-gutters",
 				"ms-azuretools.vscode-docker",
-				"yzhang.markdown-all-in-one"
+				"yzhang.markdown-all-in-one",
+				"trond-snekvik.devicetree"
 			]
 		}
 	}
