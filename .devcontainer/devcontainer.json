@@ -1,0 +1,19 @@
+{
+	"name": "Ubuntu",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "ghcr.io/zephyrproject-rtos/zephyr-build",
+
+	// Configure tool-specific properties.
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-vscode.cpptools-extension-pack",
+				"twxs.cmake",
+				"lfs.vscode-emacs-friendly",
+				"ryanluker.vscode-coverage-gutters",
+				"ms-azuretools.vscode-docker",
+				"yzhang.markdown-all-in-one"
+			]
+		}
+	}
+}
