@@ -16,5 +16,10 @@
 				"trond-snekvik.devicetree"
 			]
 		}
-	}
+	},
+
+	// Export all the usb devices to the container
+	"mounts": [
+		"source=/dev/bus/usb,target=/dev/bus/usb,type=bind"
+	]
 }
