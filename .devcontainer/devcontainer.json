@@ -1,5 +1,5 @@
 {
-	"name": "Ubuntu",
+	"name": "EmbeddedDevEnv",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"build" : {"dockerfile": "Dockerfile"},
 
@@ -20,6 +20,6 @@
 
 	// Export all the usb devices to the container
 	"mounts": [
-		"source=/dev/bus/usb,target=/dev/bus/usb,type=bind"
+		"source=/dev/bus/usb,target=/dev/bus/usb,type=bind" 
 	]
 }
