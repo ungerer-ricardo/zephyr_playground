@@ -1,7 +1,7 @@
 {
 	"name": "Ubuntu",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "ghcr.io/zephyrproject-rtos/zephyr-build",
+	"build" : {"dockerfile": "Dockerfile"},
 
 	// Configure tool-specific properties.
 	"customizations": {
