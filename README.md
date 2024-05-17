@@ -8,4 +8,15 @@ $ west update
 $ west build  -- -DEXTRA_DTC_OVERLAY_FILE=board.overlay
 ```
 
-The `west` subcommands for flashing and debugging are not yet tested.
+For now `west` is not able to flash the generated image. To flash the built image, run the command:
+
+```
+$ sudo openocd \
+    -f /opt/pico/openocd/tcl/interface/cmsis-dap.cfg \
+    -f /opt/pico/openocd/tcl/target/rp2040.cfg \
+    -c "adapter speed 5000" \
+    -c "program build/zephyr/zephyr.elf verify reset exit"
+```
+
+The `west` subcommands debugging are not yet tested.
+
