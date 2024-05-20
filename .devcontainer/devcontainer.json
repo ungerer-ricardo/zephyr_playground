@@ -18,9 +18,10 @@
 		}
 	},
 
-	// Export all the usb devices to the container
+	// Export all the usb devices to the container and pico debug UART 
 	"mounts": [
-		"source=/dev/bus/usb,target=/dev/bus/usb,type=bind" 
+		"source=/dev/bus/usb,target=/dev/bus/usb,type=bind",
+		"source=/dev/ttyACM0,target=/dev/ttyACM0,type=bind"
 	],
 
 	"privileged": true
