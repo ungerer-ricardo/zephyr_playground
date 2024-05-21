@@ -15,3 +15,9 @@ $ west flash
 
 The `west` subcommands debugging are not yet tested.
 
+## Known Issues
+
+### DevContainer
+
+- The serial-monitor vscode plugin is not working.
+  More information in: https://github.com/microsoft/vscode-serial-monitor/issues/142
