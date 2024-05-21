@@ -1,7 +1,8 @@
 FROM ghcr.io/zephyrproject-rtos/zephyr-build:latest
 
 RUN sudo apt update && sudo apt install -y \
-    usbutils
+    usbutils \
+    udev
 
 RUN cd /opt && \
     sudo wget https://raw.githubusercontent.com/raspberrypi/pico-setup/master/pico_setup.sh && \
