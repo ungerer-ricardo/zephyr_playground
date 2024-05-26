@@ -21,6 +21,17 @@
                 "-DRPI_PICO_DEBUG_ADAPTER=cmsis-dap"
             ],
             "problemMatcher": "$gcc"
+        },
+        {
+            "label": "West Flash",
+            "type": "shell",
+            "linux":{
+                "command": "/usr/local/bin/west"
+            },
+            "args": [
+                "flash"
+            ],
+            "problemMatcher":"$gcc"
         }
     ]
 }
