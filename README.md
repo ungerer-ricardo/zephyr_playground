@@ -3,9 +3,10 @@
 Simple instructions to build from scratch:
 
 ```
+$ rm -rf .west tools modules bootloader zephyr
 $ west init
 $ west update
-$ west build  -- \
+$ west build  --board rpi_pico/rp2040/w -- \
   -DEXTRA_DTC_OVERLAY_FILE=board.overlay \
   -DOPENOCD=/usr/local/bin/openocd \
   -DOPENOCD_DEFAULT_PATH=/usr/local/share/openocd/scripts \
