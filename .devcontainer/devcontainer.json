@@ -13,16 +13,18 @@
 				"ryanluker.vscode-coverage-gutters",
 				"ms-azuretools.vscode-docker",
 				"yzhang.markdown-all-in-one",
-				"trond-snekvik.devicetree"
+				"trond-snekvik.devicetree",
+				"ms-vscode.vscode-serial-monitor@0.11.240501001"
 			]
 		}
 	},
 
 	// Export all the usb devices to the container and pico debug UART 
 	"mounts": [
-		"source=/dev/bus/usb,target=/dev/bus/usb,type=bind",
-		"source=/dev/ttyACM0,target=/dev/ttyACM0,type=bind"
+		"source=/dev/,target=/dev/,type=bind"
 	],
+
+	"runArgs": ["--device=/dev/ttyACM0"],
 
 	"privileged": true
 }
