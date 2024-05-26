@@ -32,7 +32,5 @@ $ west debug
 
 ### DevContainer
 
-- The serial-monitor vscode plugin is not working.
-  More information in: https://github.com/microsoft/vscode-serial-monitor/issues/142
 - Not Possible to set breakpoint using `b main`.
   Other functions works well though
