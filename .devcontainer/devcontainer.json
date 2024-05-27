@@ -14,7 +14,8 @@
 				"ms-azuretools.vscode-docker",
 				"yzhang.markdown-all-in-one",
 				"trond-snekvik.devicetree",
-				"ms-vscode.vscode-serial-monitor@0.11.240501001"
+				"ms-vscode.vscode-serial-monitor@0.11.240501001",
+				"marus25.cortex-debug"
 			]
 		}
 	},
