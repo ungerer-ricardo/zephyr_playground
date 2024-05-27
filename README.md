@@ -1,4 +1,12 @@
-# Building from scratch
+## VSCode Integration
+
+There are VSCode configurations that enable the developer to call vscode tasks to:
+
+- build
+- flash
+- debug
+
+## Building from scratch
 
 Simple instructions to build from scratch:
 
@@ -32,5 +40,5 @@ $ west debug
 
 ### DevContainer
 
-- Not Possible to set breakpoint using `b main`.
+- When debuggin in terminal, it is not Possible to set breakpoint using `b main`.
   Other functions works well though
