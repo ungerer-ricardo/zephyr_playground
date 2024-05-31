@@ -1,6 +1,12 @@
 // /dts-v1/;
 
+#include <zephyr/dt-bindings/pinctrl/rpi-pico-rp2040-pinctrl.h>
+
 / {
+    chosen {
+        zephyr,display = &max7219_8x8;
+    };
+
     aliases {
         led0 = &myled0;
     };
@@ -10,5 +16,27 @@
         myled0: led_0 {
             gpios = <&gpio0 16 GPIO_ACTIVE_LOW>;
         };
+    };
+};
+
+&spi0_default {
+    group1 {
+        pinmux = <SPI0_CSN_P5>, <SPI0_SCK_P6>, <SPI0_TX_P7>;
+    };
+    group2 {
+        pinmux = <SPI0_RX_P4>;
+    };
+};
+
+&spi0 {
+    max7219_8x8: spi-device@0 {
+        reg = <0>;
+        status = "okay";
+        compatible = "maxim,max7219";
+        spi-max-frequency = <DT_FREQ_M(8)>;
+        intensity = <3>;
+        spi-cpol;
+        spi-hold-cs;
+        spi-cpha;
     };
 };
