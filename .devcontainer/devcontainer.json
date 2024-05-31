@@ -15,7 +15,8 @@
 				"yzhang.markdown-all-in-one",
 				"trond-snekvik.devicetree",
 				"ms-vscode.vscode-serial-monitor@0.11.240501001",
-				"marus25.cortex-debug"
+				"marus25.cortex-debug",
+				"eamodio.gitlens"
 			]
 		}
 	},
