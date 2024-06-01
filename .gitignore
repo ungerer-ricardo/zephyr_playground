@@ -3,3 +3,4 @@ build/
 modules/
 zephyr/
 tools/
+prj.conf.old
