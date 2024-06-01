@@ -24,7 +24,7 @@
             "problemMatcher": "$gcc"
         },
         {
-            "label": "West Flash",
+            "label": "West flash",
             "type": "shell",
             "linux":{
                 "command": "/usr/local/bin/west"
