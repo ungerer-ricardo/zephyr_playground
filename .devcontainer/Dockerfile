@@ -13,11 +13,6 @@ RUN apt update && apt install -y \
     libftdi-dev \
     libusb-1.0-0-dev
 
-# RUN cd /opt && \
-#     sudo wget https://raw.githubusercontent.com/raspberrypi/pico-setup/master/pico_setup.sh && \
-#     sudo SKIP_VSCODE=1 SKIP_UART=1 bash ./pico_setup.sh && \
-#     sudo rm pico_setup.sh
-
 RUN \
     cd /opt && \
     git clone "https://github.com/raspberrypi/openocd.git" -b rp2040-v0.12.0 --depth=1 && \
